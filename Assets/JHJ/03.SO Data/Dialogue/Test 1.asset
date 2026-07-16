@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62ad28c5ec815b24280c09a2856ba125, type: 3}
+  m_Name: Test 1
+  m_EditorClassIdentifier: Assembly-CSharp::JHJ.Scripts.Interaction.Dialogue.DialogueDataSO
+  lines:
+  - speakerName: "M\xE9lisse"
+    line: Mister, have you seen my mom? She would've come this way.
+  - speakerName: Henri
+    line: ' ...Your mom? This isn''t a place for kids.'
+  - speakerName: "M\xE9lisse"
+    line: I came to find her. She's tall, has brown hair, and is wearing a gray coat.
+  - speakerName: Henri
+    line: (avoiding eye contact) ...Someone like that... a lot of people passed by
+      today. I think... I think she went that way.
+  - speakerName: Henri
+    line: "Kid, don't do this here, just go home and wait\u2014"
+  - speakerName: "M\xE9lisse"
+    line: No. I'm not leaving until I find my mom.
+  - speakerName: 'Henri:  '
+    line: (sighs) ...Fine. Then go see Warrant Officer Otto. Inside the barracks.
+      He's the one with the roster.

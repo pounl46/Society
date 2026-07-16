@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62ad28c5ec815b24280c09a2856ba125, type: 3}
+  m_Name: Test 3
+  m_EditorClassIdentifier: Assembly-CSharp::JHJ.Scripts.Interaction.Dialogue.DialogueDataSO
+  lines:
+  - speakerName: "M\xE9lisse"
+    line: Mister, have you seen my mom, by any chance? Brown hair, gray coat.
+  - speakerName: "L\xE9on"
+    line: "(stares blankly at M\xE9lisse, then his expression hardens) ...A gray
+      coat?"
+  - speakerName: "M\xE9lisse"
+    line: Yeah. Didn't you see her yesterday?
+  - speakerName: "L\xE9on"
+    line: ' (looking away, his voice shaking) ...No. I didn''t see her.'
+  - speakerName: "M\xE9lisse"
+    line: Liar. Your face looks weird.
+  - speakerName: "L\xE9on"
+    line: ' (clenching his bandaged hand tightly) ...Kid, go on, get away from here.
+      I need to rest.'
+  - speakerName: "M\xE9lisse"
+    line: You know something. Tell me.
+  - speakerName: "L\xE9on"
+    line: ' (almost shouting) I said I don''t know! ...'
+  - speakerName: "L\xE9on"
+    line: (after a long pause, quietly) ...Go find Sister Marie. The tent next to
+      the chapel.
+  - speakerName: "M\xE9lisse"
+    line: Why does everyone just keep telling me to go to Sister Marie?
+  - speakerName: "L\xE9on"
+    line: "(says nothing, turns his face away, not looking at M\xE9lisse)"

@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62ad28c5ec815b24280c09a2856ba125, type: 3}
+  m_Name: Test 2
+  m_EditorClassIdentifier: Assembly-CSharp::JHJ.Scripts.Interaction.Dialogue.DialogueDataSO
+  lines:
+  - speakerName: "M\xE9lisse"
+    line: Mister, are you Otto? Mr. Henri told me to come here.
+  - speakerName: Otto
+    line: ...Henri sent you? Alright. What are you looking for?
+  - speakerName: "M\xE9lisse"
+    line: My mom. She went out yesterday and didn't come back. Her name is... (says
+      her mom's name)
+  - speakerName: Otto
+    line: "(flipping through the roster, stops \u2014 a brief silence)"
+  - speakerName: "M\xE9lisse"
+    line: Why? You could just tell me yourself.
+  - speakerName: "M\xE9lisse"
+    line: It is? Then do you know where she is?
+  - speakerName: Otto
+    line: ' (closing the roster) That''s... not mine to answer. Go see Sister Marie.'
+  - speakerName: Otto
+    line: " (unable to meet M\xE9lisse's eyes) ...Go on. It's the white tent next
+      to the chapel."
