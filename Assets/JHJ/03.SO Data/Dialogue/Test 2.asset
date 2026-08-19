@@ -13,21 +13,27 @@ MonoBehaviour:
   m_Name: Test 2
   m_EditorClassIdentifier: Assembly-CSharp::JHJ.Scripts.Interaction.Dialogue.DialogueDataSO
   lines:
-  - speakerName: "M\xE9lisse"
-    line: Mister, are you Otto? Mr. Henri told me to come here.
-  - speakerName: Otto
-    line: ...Henri sent you? Alright. What are you looking for?
-  - speakerName: "M\xE9lisse"
-    line: My mom. She went out yesterday and didn't come back. Her name is... (says
-      her mom's name)
-  - speakerName: Otto
-    line: "(flipping through the roster, stops \u2014 a brief silence)"
-  - speakerName: "M\xE9lisse"
-    line: Why? You could just tell me yourself.
-  - speakerName: "M\xE9lisse"
-    line: It is? Then do you know where she is?
-  - speakerName: Otto
-    line: ' (closing the roster) That''s... not mine to answer. Go see Sister Marie.'
-  - speakerName: Otto
-    line: " (unable to meet M\xE9lisse's eyes) ...Go on. It's the white tent next
-      to the chapel."
+  - speakerName: "\uBA5C\uB9AC\uC2A4"
+    line: "\uC544\uC800\uC528, \uC6B0\uB9AC \uC5C4\uB9C8 \uBABB \uBD24\uC5B4\uC694?
+      \uC774\uCABD\uC73C\uB85C \uC654\uC744 \uD150\uB370."
+  - speakerName: "\uC559\uB9AC"
+    line: "...\uC5C4\uB9C8? \uC5EC\uAE34 \uC560\uB4E4\uC774 \uC62C \uACF3\uC774 \uC544\uB2CC\uB370."
+  - speakerName: "\uBA5C\uB9AC\uC2A4"
+    line: "\uC5C4\uB9C8 \uCC3E\uC73C\uB7EC \uC654\uC5B4\uC694. \uD0A4 \uD06C\uACE0,
+      \uAC08\uC0C9 \uBA38\uB9AC\uC5D0, \uD68C\uC0C9 \uCF54\uD2B8 \uC785\uC5C8\uC5B4\uC694."
+  - speakerName: "\uC559\uB9AC"
+    line: "...\uADF8\uB7F0 \uC0AC\uB78C, \uC624\uB298 \uC5EC\uB7FF \uC9C0\uB098\uAC14\uC5B4.
+      \uC800\uCABD... \uC800\uCABD\uC73C\uB85C \uAC04 \uAC83 \uAC19\uAE30\uB3C4 \uD558\uACE0."
+  - speakerName: "\uC559\uB9AC"
+    line: "\uC598, \uC5EC\uAE30\uC11C \uC774\uB7EC\uC9C0 \uB9D0\uACE0 \uC9D1\uC5D0
+      \uAC00 \uC788\uB294 \uAC8C\u2014"
+  - speakerName: "\uC559\uB9AC"
+    line: "\uC2EB\uC5B4\uC694. \uC5C4\uB9C8 \uCC3E\uC744 \uB54C\uAE4C\uC9C0 \uC548
+      \uAC00\uC694."
+  - speakerName: "\uBA5C\uB9AC\uC2A4"
+    line: "\uC2EB\uC5B4\uC694. \uC5C4\uB9C8 \uCC3E\uC744 \uB54C\uAE4C\uC9C0 \uC548
+      \uAC00\uC694."
+  - speakerName: "\uC559\uB9AC"
+    line: "...\uADF8\uB798. \uADF8\uB7FC \uC624\uD1A0 \uBD80\uC0AC\uAD00\uD55C\uD14C
+      \uAC00\uBD10. \uB9C9\uC0AC \uC548\uCABD. \uBA85\uB2E8 \uAC16\uACE0 \uC788\uB294
+      \uC0AC\uB78C\uC774\uB2C8\uAE4C."

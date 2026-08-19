@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62ad28c5ec815b24280c09a2856ba125, type: 3}
+  m_Name: Test 5
+  m_EditorClassIdentifier: Assembly-CSharp::JHJ.Scripts.Interaction.Dialogue.DialogueDataSO
+  lines:
+  - speakerName: "\uBA5C\uB9AC\uC2A4"
+    line: "\uC218\uB140\uB2D8, \uC624\uD1A0 \uC544\uC800\uC528\uAC00 \uC5EC\uAE30
+      \uAC00\uBCF4\uB77C\uACE0 \uD588\uC5B4\uC694. \uC5C4\uB9C8\uB97C \uCC3E\uACE0
+      \uC788\uC5B4\uC694."
+  - speakerName: "\uB9C8\uB9AC"
+    line: "(\uC7A0\uC2DC \uBA5C\uB9AC\uC2A4\uB97C \uBC14\uB77C\uBCF4\uB2E4) ...\uB108,
+      \uC774\uB984\uC774 \uBB50\uB2C8."
+  - speakerName: "\uBA5C\uB9AC\uC2A4"
+    line: "\uBA5C\uB9AC\uC2A4\uC694."
+  - speakerName: "\uB9C8\uB9AC"
+    line: "\uBA5C\uB9AC\uC2A4... \uADF8\uB798."
+  - speakerName: "\uBA5C\uB9AC\uC2A4"
+    line: "\uC5C4\uB9C8 \uBD24\uC5B4\uC694? \uC624\uD1A0 \uC544\uC800\uC528\uAC00
+      \uBA85\uB2E8\uC5D0 \uC774\uB984 \uC788\uB2E4\uACE0 \uD588\uB294\uB370."
+  - speakerName: "\uB9C8\uB9AC"
+    line: "(\uB300\uB2F5 \uB300\uC2E0) ...\uB098\uB791 \uAC19\uC774 \uAC00\uC790.
+      \uBCF4\uC5EC\uC904 \uAC8C \uC788\uB2E4."
+  - speakerName: "\uBA5C\uB9AC\uC2A4"
+    line: "\uC5C4\uB9C8 \uAC70\uAE30 \uC788\uC5B4\uC694?"
+  - speakerName: "\uB9C8\uB9AC"
+    line: "(\uB300\uB2F5\uD558\uC9C0 \uC54A\uACE0 \uC55E\uC7A5\uC11C \uAC77\uB294\uB2E4)"
+  - speakerName: "\uBA5C\uB9AC\uC2A4"
+    line: "\uC218\uB140\uB2D8. \uC65C \uB300\uB2F5 \uC548 \uD574\uC918\uC694?"
+  - speakerName: "\uB9C8\uB9AC"
+    line: "(\uAC78\uC74C\uC744 \uBA48\uCD94\uC9C0 \uC54A\uC740 \uCC44, \uB0AE\uC740
+      \uBAA9\uC18C\uB9AC\uB85C) ...\uAC00\uBCF4\uBA74 \uC548\uB2E4."
