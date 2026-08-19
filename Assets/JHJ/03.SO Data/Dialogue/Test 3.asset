@@ -13,28 +13,26 @@ MonoBehaviour:
   m_Name: Test 3
   m_EditorClassIdentifier: Assembly-CSharp::JHJ.Scripts.Interaction.Dialogue.DialogueDataSO
   lines:
-  - speakerName: "M\xE9lisse"
-    line: Mister, have you seen my mom, by any chance? Brown hair, gray coat.
-  - speakerName: "L\xE9on"
-    line: "(stares blankly at M\xE9lisse, then his expression hardens) ...A gray
-      coat?"
-  - speakerName: "M\xE9lisse"
-    line: Yeah. Didn't you see her yesterday?
-  - speakerName: "L\xE9on"
-    line: ' (looking away, his voice shaking) ...No. I didn''t see her.'
-  - speakerName: "M\xE9lisse"
-    line: Liar. Your face looks weird.
-  - speakerName: "L\xE9on"
-    line: ' (clenching his bandaged hand tightly) ...Kid, go on, get away from here.
-      I need to rest.'
-  - speakerName: "M\xE9lisse"
-    line: You know something. Tell me.
-  - speakerName: "L\xE9on"
-    line: ' (almost shouting) I said I don''t know! ...'
-  - speakerName: "L\xE9on"
-    line: (after a long pause, quietly) ...Go find Sister Marie. The tent next to
-      the chapel.
-  - speakerName: "M\xE9lisse"
-    line: Why does everyone just keep telling me to go to Sister Marie?
-  - speakerName: "L\xE9on"
-    line: "(says nothing, turns his face away, not looking at M\xE9lisse)"
+  - speakerName: "\uBA5C\uB9AC\uC2A4"
+    line: "\uC544\uC800\uC528\uAC00 \uC624\uD1A0 \uC544\uC800\uC528\uC608\uC694?
+      \uC559\uB9AC \uC544\uC800\uC528\uAC00 \uC5EC\uAE30 \uAC00\uBCF4\uB77C\uACE0
+      \uD588\uC5B4\uC694."
+  - speakerName: "\uC624\uD1A0"
+    line: "...\uC559\uB9AC\uAC00? \uADF8\uB798. \uBB58 \uCC3E\uB294\uB370."
+  - speakerName: "\uBA5C\uB9AC\uC2A4 "
+    line: "\uC6B0\uB9AC \uC5C4\uB9C8\uC694. \uC5B4\uC81C \uB098\uAC00\uC11C \uC548
+      \uB3CC\uC544\uC654\uC5B4\uC694. \uC774\uB984\uC740..."
+  - speakerName: "\uC624\uD1A0"
+    line: "(\uBA85\uB2E8\uC744 \uB118\uAE30\uB2E4 \uBA48\uCDA4)"
+  - speakerName: "\uC624\uD1A0"
+    line: " ...\uC774\uB984\uC774 \uBA85\uB2E8\uC5D0 \uC788\uAE34 \uD55C\uB370."
+  - speakerName: "\uBA5C\uB9AC\uC2A4 "
+    line: "\uC788\uC5B4\uC694? \uADF8\uB7FC \uC5B4\uB514 \uC788\uB294\uC9C0 \uC54C\uC544\uC694?"
+  - speakerName: "\uC624\uD1A0"
+    line: "\uADF8\uAC74... \uB0B4\uAC00 \uB2F5\uD560 \uC77C\uC774 \uC544\uB2C8\uB2E4.
+      \uB9C8\uB9AC \uC218\uB140\uB2D8\uD55C\uD14C \uAC00\uBD10."
+  - speakerName: "\uBA5C\uB9AC\uC2A4"
+    line: "\uC65C\uC694? \uC544\uC800\uC528\uAC00 \uADF8\uB0E5 \uB9D0\uD574\uC8FC\uBA74
+      \uB418\uC796\uC544\uC694."
+  - speakerName: "\uC624\uD1A0"
+    line: "...\uAC00\uBD10. \uC608\uBC30\uB2F9 \uC606, \uD558\uC580 \uCC9C\uB9C9\uC774\uB2E4."

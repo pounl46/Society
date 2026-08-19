@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62ad28c5ec815b24280c09a2856ba125, type: 3}
+  m_Name: Test 4
+  m_EditorClassIdentifier: Assembly-CSharp::JHJ.Scripts.Interaction.Dialogue.DialogueDataSO
+  lines:
+  - speakerName: "\uBA5C\uB9AC\uC2A4"
+    line: "\uC544\uC800\uC528, \uD639\uC2DC \uC6B0\uB9AC \uC5C4\uB9C8 \uBD24\uC5B4\uC694?
+      \uAC08\uC0C9 \uBA38\uB9AC\uC5D0 \uD68C\uC0C9 \uCF54\uD2B8\uC694."
+  - speakerName: "\uB808\uC639"
+    line: "(\uBA5C\uB9AC\uC2A4\uB97C \uBB3C\uB044\uB7EC\uBBF8 \uBCF4\uB2E4\uAC00
+      \uD45C\uC815\uC774 \uAD73\uB294\uB2E4) ...\uD68C\uC0C9 \uCF54\uD2B8?"
+  - speakerName: "\uBA5C\uB9AC\uC2A4"
+    line: "\uB124. \uC5B4\uC81C \uBABB \uBD24\uC5B4\uC694?"
+  - speakerName: "\uB808\uC639"
+    line: "(\uC2DC\uC120\uC744 \uB3CC\uB9AC\uBA70, \uBAA9\uC18C\uB9AC\uAC00 \uD754\uB4E4\uB9B0\uB2E4)
+      ...\uC544\uB2C8. \uBABB \uBD24\uB2E4."
+  - speakerName: "\uBA5C\uB9AC\uC2A4"
+    line: "\uAC70\uC9D3\uB9D0. \uD45C\uC815\uC774 \uC774\uC0C1\uD574\uC694."
+  - speakerName: "\uB808\uC639"
+    line: "(\uBD95\uB300 \uAC10\uC740 \uC190\uC744 \uAF49 \uC950\uBA70) ...\uC598,
+      \uC800\uB9AC \uAC00 \uC788\uC5B4\uB77C. \uB098 \uC880 \uC26C\uC5B4\uC57C \uD574."
+  - speakerName: "\uBA5C\uB9AC\uC2A4"
+    line: "\uC544\uC800\uC528 \uBB54\uAC00 \uC54C\uC796\uC544\uC694. \uB9D0\uD574\uC918\uC694."
+  - speakerName: "\uB808\uC639"
+    line: "(\uAC70\uC758 \uC18C\uB9AC\uCE58\uB4EF) \uBAA8\uB978\uB2E4\uB2C8\uAE4C!
+      ..."
+  - speakerName: "\uB808\uC639"
+    line: "(\uD55C\uCC38 \uB4A4, \uB0AE\uAC8C) ...\uAC00\uC11C \uB9C8\uB9AC \uC218\uB140\uB2D8
+      \uCC3E\uC544. \uC608\uBC30\uB2F9 \uC606 \uCC9C\uB9C9."
+  - speakerName: "\uBA5C\uB9AC\uC2A4"
+    line: "\uC65C \uB2E4\uB4E4 \uB098\uD55C\uD14C \uB9C8\uB9AC \uC218\uB140\uB2D8\uD55C\uD14C
+      \uAC00\uB77C\uACE0\uB9CC \uD574\uC694?"
+  - speakerName: "\uB808\uC639"
+    line: "(\uB300\uB2F5 \uC5C6\uC774 \uC5BC\uAD74\uC744 \uB3CC\uB824 \uBA5C\uB9AC\uC2A4\uB97C
+      \uBCF4\uC9C0 \uC54A\uB294\uB2E4)"
