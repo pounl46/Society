@@ -20,6 +20,9 @@ namespace JHJ.Scripts.Interaction.Dialogue
         /// <summary>지금까지 완료된 대화 개수. 0부터 시작 (아직 아무도 안 끝냄).</summary>
         public static int CompletedCount { get; private set; }
 
+        /// <summary>지금 플레이어와 대화 중인 NPC 오브젝트. 대화 중 아니면 null.</summary>
+        public static GameObject CurrentSpeaker { get; private set; }
+
         [Header("참조")]
         [Tooltip("좌클릭 입력을 받아올 Input Reader SO (Game/Input/Dialogue Input Reader 로 생성)")]
         [SerializeField] private DialogueInputReader inputReader;
@@ -56,7 +59,11 @@ namespace JHJ.Scripts.Interaction.Dialogue
                 inputReader.OnAdvancePressed -= HandleAdvancePressed;
         }
 
-        public void StartDialogue(DialogueDataSO data)
+        /// <summary>
+        /// 대화 시작. source는 "누가 말하고 있는지"를 나타내는 NPC 오브젝트로,
+        /// NPCPatroller 등이 "지금 나 말하는 중인지" 판단하는 데 씀 (안 넘겨도 동작엔 지장 없음).
+        /// </summary>
+        public void StartDialogue(DialogueDataSO data, GameObject source = null)
         {
             if (data == null || data.Lines.Count == 0) return;
             if (IsDialogueActive) return;
@@ -64,6 +71,7 @@ namespace JHJ.Scripts.Interaction.Dialogue
             _currentDialogue = data;
             _lineIndex = 0;
             IsDialogueActive = true;
+            CurrentSpeaker = source;
 
             OnDialogueStarted?.Invoke();
             OnLineChanged?.Invoke(_currentDialogue.Lines[_lineIndex]);
@@ -95,6 +103,7 @@ namespace JHJ.Scripts.Interaction.Dialogue
             IsDialogueActive = false;
             _currentDialogue = null;
             _lineIndex = 0;
+            CurrentSpeaker = null;
 
             CompletedCount++;
             Debug.Log($"[DialogueManager] 대화 완료. CompletedCount={CompletedCount}");
