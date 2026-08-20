@@ -54,7 +54,7 @@ namespace JHJ.Scripts.Interaction.Dialogue
                 return;
             }
 
-            DialogueManager.Instance.StartDialogue(dialogueData);
+            DialogueManager.Instance.StartDialogue(dialogueData, gameObject);
         }
     }
 }
