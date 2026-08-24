@@ -211,6 +211,7 @@ GameObject:
   - component: {fileID: 5840675522466375157}
   - component: {fileID: 7524524875045116314}
   - component: {fileID: 8715239645847208046}
+  - component: {fileID: 1863294756309923031}
   m_Layer: 0
   m_Name: Cylinder.004
   m_TagString: Untagged
@@ -290,6 +291,28 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1863294756309923031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1582781426512659586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d18e83a33847f0640941febed2cd2d14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WheelGroundCheck
+  rayOrigin: {fileID: 5840675522466375157}
+  rayLength: 0.3
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  skinWidth: 0.02
+  drawGizmo: 1
+  OnGroundStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &3783548385964380896
 GameObject:
   m_ObjectHideFlags: 0
