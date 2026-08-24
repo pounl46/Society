@@ -3,10 +3,18 @@ using UnityEngine.InputSystem;
 
 public class Player : MonoBehaviour
 {
+    
+
     public enum Gear { Forward, Reverse }
     [Header("바퀴 오브젝트 (비주얼 회전용, 선택사항)")]
     public Transform leftWheel;
     public Transform rightWheel;
+
+    [Header("바퀴 접지 감지 (WheelGroundCheck)")]
+    [Tooltip("왼쪽 바퀴에 붙인 WheelGroundCheck. 비워두면 접지 체크 없이 항상 입력 허용")]
+    public WheelGroundCheck leftWheelGroundCheck;
+    [Tooltip("오른쪽 바퀴에 붙인 WheelGroundCheck. 비워두면 접지 체크 없이 항상 입력 허용")]
+    public WheelGroundCheck rightWheelGroundCheck;
 
     [Header("휠체어 규격")]
     [Tooltip("바퀴 반지름 (m)")]
@@ -31,6 +39,7 @@ public class Player : MonoBehaviour
     [Header("기어 상태 (읽기 전용, 확인용)")]
     [SerializeField] private Gear currentGear = Gear.Forward; // 기본값: 전진기어
     public Gear CurrentGear => currentGear;
+
 
     void Awake()
     {
@@ -70,8 +79,13 @@ public class Player : MonoBehaviour
 
         float targetSpeed = maxWheelSpeed * gearSign * speedMultiplier;
 
-        bool leftPressed = keyboard.aKey.isPressed;
-        bool rightPressed = keyboard.dKey.isPressed;
+        // 바퀴가 바닥에 안 닿아있으면(=WheelGroundCheck가 false) 해당 바퀴 입력을 막는다.
+        // GroundCheck를 안 꽂아뒀으면(null) 예전처럼 항상 입력 허용.
+        bool leftGrounded = leftWheelGroundCheck == null || leftWheelGroundCheck.isGrounded;
+        bool rightGrounded = rightWheelGroundCheck == null || rightWheelGroundCheck.isGrounded;
+
+        bool leftPressed = keyboard.aKey.isPressed && leftGrounded;
+        bool rightPressed = keyboard.dKey.isPressed && rightGrounded;
 
         leftWheelSpeed = leftPressed
             ? Mathf.MoveTowards(leftWheelSpeed, targetSpeed, acceleration * 100f * Time.deltaTime)
