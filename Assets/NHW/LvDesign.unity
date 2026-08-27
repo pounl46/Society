@@ -1808,6 +1808,11 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 647953782}
   m_SourcePrefab: {fileID: 100100000, guid: aba2dd552dec92b479a606a09eb4b1d6, type: 3}
+--- !u!54 &473850229 stripped
+Rigidbody:
+  m_CorrespondingSourceObject: {fileID: 5744638737700988225, guid: aba2dd552dec92b479a606a09eb4b1d6, type: 3}
+  m_PrefabInstance: {fileID: 473850228}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &483461209
 GameObject:
   m_ObjectHideFlags: 0
@@ -2505,7 +2510,7 @@ MonoBehaviour:
   interactableLayer:
     serializedVersion: 2
     m_Bits: 64
-  detectionOrigin: {fileID: 0}
+  detectionOriginOffset: {x: 0, y: 0, z: 0}
 --- !u!1 &713859971
 GameObject:
   m_ObjectHideFlags: 0
@@ -2856,6 +2861,8 @@ GameObject:
   - component: {fileID: 755571369}
   - component: {fileID: 755571374}
   - component: {fileID: 755571373}
+  - component: {fileID: 755571376}
+  - component: {fileID: 755571375}
   m_Layer: 0
   m_Name: Cube (6)
   m_TagString: Untagged
@@ -2975,6 +2982,7 @@ MonoBehaviour:
   rotateTowardsMovement: 1
   rotateSpeed: 10
   pauseWhileTalking: 1
+  playerBlockDetector: {fileID: 0}
 --- !u!114 &755571374
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2991,6 +2999,41 @@ MonoBehaviour:
   dialogueData: {fileID: 11400000, guid: 71374001e8bbd4b429c21510b3f799c8, type: 2}
   promptHeightOffset: 1.6
   requiredOrder: 1
+  detectionRadius: 2
+  playerTag: Player
+--- !u!114 &755571375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 755571368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb313cd7b2001bc418e187ae52bdb093, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::JHJ.Scripts.Interaction.Movement.PlayerDialogueLock
+  dialogueManager: {fileID: 1360120976}
+  scriptsToDisable: []
+  playerRigidbody: {fileID: 473850229}
+--- !u!114 &755571376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 755571368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b75829bcd08b8694a87825aa2c76106d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::JHJ.Scripts.Interaction.Movement.PlayerPathBlockDetector
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 128
+  detectionDistance: 1.2
+  detectionRadius: 0.4
+  originOffset: {x: 0, y: 1, z: 0}
 --- !u!1 &770303218
 GameObject:
   m_ObjectHideFlags: 0

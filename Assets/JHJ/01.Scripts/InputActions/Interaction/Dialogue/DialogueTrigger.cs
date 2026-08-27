@@ -78,7 +78,7 @@ namespace JHJ.Scripts.Interaction.Dialogue
             if (playerObj != null)
             {
                 _player = playerObj.transform;
-                Debug.Log($"[DialogueTrigger:{gameObject.name}] 플레이어 찾음: {playerObj.name}"); // TODO: 확인되면 지우기
+      
             }
             else
                 Debug.LogWarning($"[DialogueTrigger] '{playerTag}' 태그를 가진 오브젝트를 찾지 못했습니다.", this);
@@ -102,8 +102,7 @@ namespace JHJ.Scripts.Interaction.Dialogue
             _isPlayerInRange = sqrDist <= detectionRadius * detectionRadius;
 
             // TODO: 원인 확인되면 이 로그 지우기
-            Debug.Log($"[DialogueTrigger:{gameObject.name}] 실제거리={Mathf.Sqrt(sqrDist):F2}, " +
-                      $"detectionRadius={detectionRadius}, inRange={_isPlayerInRange}");
+     
         }
 
         public void Interact(GameObject interactor)

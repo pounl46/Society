@@ -514,11 +514,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::JHJ.Scripts.Interaction.Interactio.PlayerInteractor
   inputReader: {fileID: 11400000, guid: 6ec8337bf631c454497fad618270b029, type: 2}
-  detectionRadius: 2.5
-  interactableLayer:
-    serializedVersion: 2
-    m_Bits: 192
-  detectionOriginOffset: {x: 0, y: 0, z: 0}
 --- !u!1 &854460979
 GameObject:
   m_ObjectHideFlags: 0
@@ -568,12 +563,12 @@ GameObject:
   - component: {fileID: 912332400}
   - component: {fileID: 912332399}
   - component: {fileID: 912332398}
-  - component: {fileID: 912332397}
   - component: {fileID: 912332402}
   - component: {fileID: 912332403}
   - component: {fileID: 912332404}
   - component: {fileID: 912332405}
   - component: {fileID: 912332406}
+  - component: {fileID: 912332407}
   m_Layer: 6
   m_Name: InteractiveObj
   m_TagString: Untagged
@@ -581,27 +576,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!65 &912332397
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 912332396}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &912332398
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -776,6 +750,27 @@ MonoBehaviour:
   scriptsToDisable:
   - {fileID: 667179454439249310}
   playerRigidbody: {fileID: 5744638736387000743}
+--- !u!135 &912332407
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 912332396}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1003472728
 GameObject:
   m_ObjectHideFlags: 0
@@ -2523,6 +2518,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Player
   leftWheel: {fileID: 7657088457349674170}
   rightWheel: {fileID: 5840675521615825171}
+  leftWheelGroundCheck: {fileID: 0}
+  rightWheelGroundCheck: {fileID: 0}
   wheelRadius: 1
   trackWidth: 3.5
   maxWheelSpeed: 500

@@ -1373,7 +1373,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c8aa18c0d61f1a459399e6b5fd535e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::JHJ.Scripts.UI.Title.TitleMenuController
-  gameSceneName: JHJTestScene
+  gameSceneName: LvDesign
   optionsPanel: {fileID: 1423230665}
 --- !u!4 &1423230667
 Transform:
