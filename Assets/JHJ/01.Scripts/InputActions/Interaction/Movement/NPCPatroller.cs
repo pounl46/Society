@@ -37,6 +37,10 @@ namespace JHJ.Scripts.Interaction.Movement
         [Tooltip("이 NPC가 지금 플레이어와 대화 중일 때 이동을 멈춤")]
         [SerializeField] private bool pauseWhileTalking = true;
 
+        [Header("플레이어 충돌 방지")]
+        [Tooltip("비워두면 플레이어 감지 기능 없이 그냥 계속 순회함")]
+        [SerializeField] private PlayerPathBlockDetector playerBlockDetector;
+
         private int _currentIndex;
         private int _pingPongDirection = 1;
         private bool _isWaiting;
@@ -46,6 +50,7 @@ namespace JHJ.Scripts.Interaction.Movement
             if (waypoints == null || waypoints.Length == 0) return;
             if (_isWaiting) return;
             if (pauseWhileTalking && IsBeingTalkedTo()) return;
+            if (playerBlockDetector != null && playerBlockDetector.IsPlayerBlocking()) return;
 
             MoveTowardsCurrentWaypoint();
         }
