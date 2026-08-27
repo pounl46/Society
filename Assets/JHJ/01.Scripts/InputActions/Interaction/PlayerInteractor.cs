@@ -11,6 +11,10 @@ namespace JHJ.Scripts.Interaction.Interactio
     /// - 타겟이 바뀔 때마다 OnTargetChanged 이벤트를 발생시켜, UI 등 다른 시스템이
     ///   이 클래스 내부 구조를 몰라도 반응할 수 있게 한다.
     ///
+    /// 감지 중심점은 항상 "이 오브젝트(플레이어) 자신의 위치 + 오프셋"으로 고정된다.
+    /// 예전처럼 다른 오브젝트의 Transform을 드래그해서 잘못 연결하는 실수가
+    /// 구조적으로 불가능하도록, Transform 참조가 아니라 숫자(Vector3 오프셋)로만 조절한다.
+    ///
     /// 무빙 스크립트와는 완전히 독립적으로 동작하므로 다른 스크립트를 건드릴 필요가 없다.
     /// </summary>
     public class PlayerInteractor : MonoBehaviour
@@ -22,8 +26,8 @@ namespace JHJ.Scripts.Interaction.Interactio
         [Header("감지 설정")]
         [SerializeField] private float detectionRadius = 2.5f;
         [SerializeField] private LayerMask interactableLayer;
-        [Tooltip("비워두면 이 오브젝트의 위치를 기준으로 감지")]
-        [SerializeField] private Transform detectionOrigin;
+        [Tooltip("감지 중심점을 이 오브젝트 위치에서 얼마나 띄울지 (보통 0,0,0이면 충분함)")]
+        [SerializeField] private Vector3 detectionOriginOffset = Vector3.zero;
 
         /// <summary>감지된 상호작용 대상이 바뀔 때마다 발생 (없어지면 null로 발생)</summary>
         public event Action<IInteractable> OnTargetChanged;
@@ -53,7 +57,7 @@ namespace JHJ.Scripts.Interaction.Interactio
         /// <summary>범위 내 IInteractable 중 가장 가까운 대상을 찾아 _currentTarget에 저장</summary>
         private void DetectClosestInteractable()
         {
-            Vector3 origin = detectionOrigin != null ? detectionOrigin.position : transform.position;
+            Vector3 origin = transform.position + detectionOriginOffset;
             int count = Physics.OverlapSphereNonAlloc(origin, detectionRadius, _overlapBuffer, interactableLayer);
 
             IInteractable closest = null;
@@ -96,7 +100,7 @@ namespace JHJ.Scripts.Interaction.Interactio
 
         private void OnDrawGizmosSelected()
         {
-            Vector3 origin = detectionOrigin != null ? detectionOrigin.position : transform.position;
+            Vector3 origin = transform.position + detectionOriginOffset;
             Gizmos.color = Color.cyan;
             Gizmos.DrawWireSphere(origin, detectionRadius);
         }
