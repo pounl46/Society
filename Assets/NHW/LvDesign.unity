@@ -1807,6 +1807,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 604719809340113479, guid: aba2dd552dec92b479a606a09eb4b1d6, type: 3}
       insertIndex: -1
       addedObject: {fileID: 647953782}
+    - targetCorrespondingSourceObject: {fileID: 604719809340113479, guid: aba2dd552dec92b479a606a09eb4b1d6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 647953783}
   m_SourcePrefab: {fileID: 100100000, guid: aba2dd552dec92b479a606a09eb4b1d6, type: 3}
 --- !u!54 &473850229 stripped
 Rigidbody:
@@ -2505,12 +2508,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d5dfd7d8df4bd845929d828177c6a20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::JHJ.Scripts.Interaction.Interactio.PlayerInteractor
-  inputReader: {fileID: 0}
-  detectionRadius: 2.5
-  interactableLayer:
-    serializedVersion: 2
-    m_Bits: 64
-  detectionOriginOffset: {x: 0, y: 0, z: 0}
+  inputReader: {fileID: 11400000, guid: 6ec8337bf631c454497fad618270b029, type: 2}
+  maxInteractDistance: 3
+--- !u!114 &647953783
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 647953777}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb313cd7b2001bc418e187ae52bdb093, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::JHJ.Scripts.Interaction.Movement.PlayerDialogueLock
+  dialogueManager: {fileID: 1360120976}
+  scriptsToDisable: []
+  playerRigidbody: {fileID: 473850229}
 --- !u!1 &713859971
 GameObject:
   m_ObjectHideFlags: 0
@@ -2999,8 +3013,6 @@ MonoBehaviour:
   dialogueData: {fileID: 11400000, guid: 71374001e8bbd4b429c21510b3f799c8, type: 2}
   promptHeightOffset: 1.6
   requiredOrder: 1
-  detectionRadius: 2
-  playerTag: Player
 --- !u!114 &755571375
 MonoBehaviour:
   m_ObjectHideFlags: 0
