@@ -26,8 +26,7 @@ public class GO : MonoBehaviour
            bug++;
             if (bug > 1)
             {
-                //Scene currentScene = SceneManager.GetActiveScene();
-                //SceneManager.LoadScene(currentScene.name);
+                //»ç¸Á
             }
         }
     }

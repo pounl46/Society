@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1
+    path: Assets/NHW/LvDesign.unity
+    guid: 5ba3abaf90d35a74a8b090bd18f43d5a
+  - enabled: 1
     path: Assets/JHJ/00.Scene/JHJTitleScene.unity
     guid: ad66c8190af988448b9353bede91856c
   - enabled: 1
